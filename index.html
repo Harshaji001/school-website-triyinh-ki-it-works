@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Chapra Central — Modern School Template</title>
+	<meta name="description" content="Premium responsive school website template (placeholder content)." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="site-header" id="site-header">
+		<div class="container header-inner">
+			<a href="#home" class="logo" aria-label="Chapra Central School">
+				<!-- Placeholder SVG logo -->
+				<svg width="42" height="42" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+					<rect x="3" y="6" width="18" height="12" rx="2" fill="#0B72FF"></rect>
+					<path d="M6 10h12M6 14h8" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+				</svg>
+				<span class="school-name">Chapra Central School</span>
+			</a>
+
+			<nav class="nav" id="nav" >
+				<ul class="nav-list">
+					<li><a href="#home" class="nav-link">Home</a></li>
+					<li><a href="#about" class="nav-link">About</a></li>
+					<li><a href="#academics" class="nav-link">Academics</a></li>
+					<li><a href="#notices" class="nav-link">Notices</a></li>
+					<li><a href="#gallery" class="nav-link">Gallery</a></li>
+					<li><a href="#teachers" class="nav-link">Teachers</a></li>
+					<li><a href="#contact" class="nav-link">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-actions">
+				<button class="btn ghost toggle-theme" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+				<button class="hamburger" id="hamburger" aria-label="Open menu">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- HERO -->
+		<section id="home" class="hero">
+			<div class="hero-overlay"></div>
+			<div class="container hero-inner">
+				<div class="hero-content">
+					<h1 class="hero-title"><span id="typed">Inspiring Young Minds</span></h1>
+					<p class="hero-sub">A modern learning environment that fosters curiosity, creativity and excellence.</p>
+					<div class="hero-cta">
+						<a href="#about" class="btn primary">Learn More</a>
+						<a href="#admissions" class="btn outline">Admissions</a>
+					</div>
+				</div>
+				<div class="hero-media" aria-hidden="true">
+					<img src="logo.png" alt="Students and school" loading="lazy" style="width: 300px; height:300px; margin: lef 30px;">
+				</div>
+			</div>
+			<a class="scroll-down" href="#about" aria-label="Scroll to about">▼</a>
+		</section>
+
+		<!-- ABOUT -->
+		<section id="about" class="section about reveal">
+			<div class="container grid about-grid">
+				<div class="about-text">
+					<h2>About Chapra Central School</h2>
+					<p>Chapra Central School is committed to delivering an outstanding education with a focus on holistic growth, modern facilities, and a dedicated faculty. We blend tradition and innovation to prepare students for a global future.</p>
+					<ul class="features">
+						<li>Student-centered learning</li>
+						<li>STEM & Arts integration</li>
+						<li>Strong pastoral care</li>
+					</ul>
+					<a href="about.html" class="btn primary">See more</a>
+				</div>
+				<figure class="about-media">
+					<img src="slide-1.jpg" alt="School building" loading="lazy">
+					<figcaption>Modern campus with vibrant learning spaces.</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<!-- ACADEMICS -->
+		<section id="academics" class="section academics reveal">
+			<div class="container">
+				<div class="section-head">
+					<h2>Academics</h2>
+					<p>Comprehensive programs designed to challenge and inspire every student.</p>
+				</div>
+				<div class="cards-grid">
+					<article class="card">
+						<div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=900&auto=format&fit=crop')"></div>
+						<div class="card-body">
+							<h3>Science & Technology</h3>
+							<p>State-of-the-art labs and inquiry-led learning for curious minds.</p>
+							<a href="#">see more</a>
+						</div>
+					</article>
+					<article class="card">
+						<div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=900&auto=format&fit=crop')"></div>
+						<div class="card-body">
+							<h3>Arts & Humanities</h3>
+							<p>Creative programs that foster expression and critical thinking.</p>
+							<a href="#">see more</a>
+						</div>
+					</article>
+					<article class="card">
+						<div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=900&auto=format&fit=crop')"></div>
+						<div class="card-body">
+							<h3>Sports & Wellness</h3>
+							<p>Physical education and wellbeing are central to student life.</p>
+							<a href="#">see more</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- NOTICES / TICKER -->
+		<section id="notices" class="section notices reveal">
+			<div class="container">
+				<div class="notice-bar">
+					<span class="notice-title">Latest Notices</span>
+					<div class="notice-ticker" id="noticeTicker" aria-live="polite"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- GALLERY -->
+		<section id="gallery" class="section gallery reveal">
+			<div class="container">
+				<div class="section-head">
+					<h2>Gallery</h2>
+					<p>Moments from school life — events, learning, and achievements.</p>
+				</div>
+				<div class="gallery-grid">
+					<!-- Images use data-full for lightbox -->
+					<img data-src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop" data-full="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop" alt="Gallery image 1" class="gallery-item" loading="lazy" title="yoyo">
+					<img data-src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=800&auto=format&fit=crop" data-full="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1600&auto=format&fit=crop" alt="Gallery image 2" class="gallery-item" loading="lazy">
+					<img data-src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop" data-full="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1600&auto=format&fit=crop" alt="Gallery image 3" class="gallery-item" loading="lazy">
+					<img data-src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=800&auto=format&fit=crop" data-full="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1600&auto=format&fit=crop" alt="Gallery image 4" class="gallery-item" loading="lazy">
+					<img data-src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop" data-full="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1600&auto=format&fit=crop" alt="Gallery image 5" class="gallery-item" loading="lazy">
+					<img data-src="https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=800&auto=format&fit=crop" data-full="https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=1600&auto=format&fit=crop" alt="Gallery image 6" class="gallery-item" loading="lazy">
+				</div>
+			</div>
+		</section>
+
+		<!-- TEACHERS & PRINCIPAL -->
+		<section id="teachers" class="section teachers reveal">
+			<div class="container">
+				<div class="section-head">
+					<h2>Leadership & Faculty</h2>
+					<p>Experienced, caring, and passionate educators.</p>
+				</div>
+
+				<div class="principal-card">
+					<img src="principal.jpgMTktMDEtMjAyNSAxNTozMDoyOA==.jpg" alt="Principal" loading="lazy">
+					<div class="principal-body">
+						<h3>Mr. Santosh kumar</h3>
+						<p class="role">Principal</p>
+						<p>With over 20 years of educational leadership,Mr. Santosh kumar  our school with focus on academic excellence and holistic development.</p>
+					</div>
+				</div>
+
+				<div class="cards-grid teachers-grid">
+					<article class="teacher-card">
+						<img src="principal.jpgMTktMDEtMjAyNSAxNTozMDoyOA==.jpg" alt="Teacher 1" loading="lazy">
+						<h4>Mr. </h4>
+						<p>Mathematics Teacher</p>
+					</article>
+					<article class="teacher-card">
+						<img src="principal.jpgMTktMDEtMjAyNSAxNTozMDoyOA==.jpg" alt="Teacher 2" loading="lazy">
+						<h4>Mr. </h4>
+						<p>Science Teacher</p>
+					</article>
+					<article class="teacher-card">
+						<img src="principal.jpgMTktMDEtMjAyNSAxNTozMDoyOA==.jpg" alt="Teacher 3" loading="lazy">
+						<h4>Mr. </h4>
+						<p>English Teacher</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACT -->
+		<section id="contact" class="section contact reveal">
+			<div class="container grid contact-grid">
+				<div class="contact-form">
+					<h2>Contact Us</h2>
+					<p>Send us a message and we'll get back to you.</p>
+					<form id="contactForm" novalidate>
+						<label>
+							<span>Name</span>
+							<input type="text" name="name" id="name" required>
+							<small class="error" id="nameError"></small>
+						</label>
+						<label>
+							<span>Email</span>
+							<input type="email" name="email" id="email" required>
+							<small class="error" id="emailError"></small>
+						</label>
+						<label>
+							<span>Message</span>
+							<textarea name="message" id="message" rows="5" required></textarea>
+							<small class="error" id="messageError"></small>
+						</label>
+						<button type="submit" class="btn primary">Send Message</button>
+						<div id="formSuccess" class="form-success" role="status" aria-live="polite"></div>
+					</form>
+				</div>
+				<div class="contact-map">
+					<h3>Find Us</h3>
+					<!-- Placeholder Google Maps embed (replace with actual location) -->
+					<div class="map-wrap">
+						<iframe title="school map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83945081423!2d77.0688969!3d28.5278191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce6d5b0f66f4f%3A0x9e1eabf1e3b9d2b0!2sNew%20Delhi%2C%20India!5e0!3m2!1sen!2sus!4v1618361844344!5m2!1sen!2sus" loading="lazy"></iframe>
+					</div>
+					<ul class="contact-info">
+						<li><strong>Phone:</strong> 06152 248 112</li>
+						<li><strong>Email:</strong> info@chapracentralschool.co.in</li>
+						<li><strong>Address:</strong> 123 School Lane, Chapra</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- LIGHTBOX -->
+	<div id="lightbox" class="lightbox" aria-hidden="true">
+		<button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+		<img id="lightboxImg" alt="">
+		<div id="lightboxCaption" class="lightbox-caption"></div>
+	</div>
+
+	<!-- BACK TO TOP -->
+	<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+	<!-- FOOTER -->
+	<footer class="site-footer">
+		<div class="container footer-grid">
+			<div class="footer-about">
+				<a class="logo" href="#home"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" fill="#0B72FF"></rect><path d="M6 10h12M6 14h8" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path></svg><span>Chapra Central School</span></a>
+				<p>Committed to excellence in education.</p>
+			</div>
+			<nav class="footer-links">
+				<h4>Quick Links</h4>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#academics">Academics</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="footer-social" >
+				<h4>Follow Us</h4>
+				<div class="social-meadia-icons">
+					<ul class="wrapper">
+						<li class="icon facebook">
+						  <span class="tooltip">Facebook</span>
+						  <svg
+							viewBox="0 0 320 512"
+							height="1.2em"
+							fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg"
+						  >
+							<path
+							  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+							></path>
+						  </svg>
+						</li>
+					  
+						<li class="icon youtube">
+						  <span class="tooltip">YouTube</span>
+						  <svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="1.8em"
+							viewBox="0 0 576 512"
+							fill="currentColor"
+						  >
+							<path
+							  d="M549.655 124.083c-6.281-23.65-24.805-42.173-48.454-48.454C458.2 64 288 64 288 64S117.8 64 74.799 75.629c-23.65 6.281-42.173 24.804-48.454 48.454C15.63 167.083 15.63 256 15.63 256s0 88.917 10.715 131.917c6.281 23.65 24.804 42.173 48.454 48.454C117.8 448 288 448 288 448s170.2 0 213.201-11.629c23.65-6.281 42.173-24.804 48.454-48.454C560.37 344.917 560.37 256 560.37 256s0-88.917-10.715-131.917zM232 338.523V173.477L358.4 256 232 338.523z"
+							></path>
+						  </svg>
+						</li>
+					  
+						<li class="icon instagram">
+						  <span class="tooltip">Instagram</span>
+						  <svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="1.2em"
+							fill="currentColor"
+							class="bi bi-instagram"
+							viewBox="0 0 16 16"
+						  >
+							<path
+							  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+							></path>
+						  </svg>
+						</li>
+					  </ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>© <span id="year"></span> Chapra Central School — Developed by Harsh (student of CCS)</p>
+		</div>
+	</footer>
+
+	<script src="js/main.js" defer></script>
+</body>
+</html>
